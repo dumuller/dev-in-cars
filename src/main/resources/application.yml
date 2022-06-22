@@ -6,15 +6,11 @@ spring:
     password:
   jpa:
     database-platform: org.hibernate.dialect.H2Dialect
+    show-sql: true
+    defer-datasource-initialization: true
   h2:
     console:
       enabled: true
 
 server:
   port: 5000
-
-info:
-  app:
-    version: CI_PIPELINE_IID
-    commit: CI_COMMIT_SHORT_SHA
-    branch: CI_COMMIT_BRANCH
